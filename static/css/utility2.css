@@ -1,0 +1,202 @@
+/* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-table {
+  display: table;
+}
+
+.d-table-row {
+  display: table-row;
+}
+
+.d-table-cell {
+  display: table-cell;
+}
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-inline-flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.d-flexbox { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.w-1-4 {
+    width: 25%;
+}
+
+.w-2-4 {
+    width: 50%;
+}
+
+.w-3-4 {
+    width: 75%;
+}
+
+.w-4-4 {
+    width: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.clear {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .d-sm-none {
+      display: none;
+    }
+    
+    .d-sm-inline {
+      display: inline;
+    }
+    
+    .d-sm-inline-block {
+      display: inline-block;
+    }
+    
+    .d-sm-block {
+      display: block;
+    }
+    
+    .d-sm-table {
+      display: table;
+    }
+    
+    .d-sm-table-row {
+      display: table-row;
+    }
+    
+    .d-sm-table-cell {
+      display: table-cell;
+    }
+
+    .d-sm-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    .d-sm-inline-flex {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+    }
+    
+    .d-sm-flexbox { 
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .w-sm-100 {
+      width: 100%;
+    }
+
+    .sm-clear {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .d-md-none {
+      display: none;
+    }
+    
+    .d-md-inline {
+      display: inline;
+    }
+    
+    .d-md-inline-block {
+      display: inline-block;
+    }
+    
+    .d-md-block {
+      display: block;
+    }
+    
+    .d-md-table {
+      display: table;
+    }
+    
+    .d-md-table-row {
+      display: table-row;
+    }
+    
+    .d-md-table-cell {
+      display: table-cell;
+    }
+
+    .d-md-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    
+    .d-md-inline-flex {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+    }
+    
+    .d-md-flexbox { 
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    .w-md-100 {
+      width: 100%;
+    }
+
+    .md-clear {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+
+

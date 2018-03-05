@@ -1,0 +1,76 @@
+/* define korean font used in web site */
+/* regular font */
+@font-face {
+    font-family: nanumBarunPen;
+    src: url(/static/font/nanumbarunpenr.eot) format('embedded-opentype'),
+         url(/static/font/nanumbarunpenr.woff) format('woff'),
+         url(/static/font/nanumbarunpenr.ttf) format('truetype');
+    font-weight: 400;
+}
+
+/* bold font */
+@font-face {
+    font-family: nanumBarunPen;
+    src: url(/static/font/nanumbarunpenb.eot) format('embedded-opentype'),
+         url(/static/font/nanumbarunpenb.woff) format('woff');
+    font-weight: 700;
+}
+
+/* reset css predefined in user-agent */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, span, p {
+    font-family: nanumBarunPen;
+}
+
+body ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+body a, body a:visited {
+    text-decoration: none;
+}
+
+body button {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    border: 2px solid #4d4d4d;
+}
+
+body button:focus {
+    outline: none;
+}
+
+/* 브라우저 전체가 flexbox로 보이게하고 header와 footer는 section(본문)의 내용에 따라 알맞은 하단과 상단에 위치하도록 자동으로 조정하는 class */
+
+body.setflex {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-flex-direction: column; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+}
+
+body.setflex > #body {
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    -webkit-flex-direction: column; 
+    -ms-flex-direction: column; 
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.setflex > #body > #content {
+    -webkit-box-flex: 1; 
+    -ms-flex-positive: 1; 
+    flex-grow: 1;
+}
+

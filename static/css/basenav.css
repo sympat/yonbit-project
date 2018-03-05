@@ -1,0 +1,36 @@
+#nav-menu > ul > li > a {
+    -webkit-transition: border-bottom-color 0.2s, color 0.2s;
+    transition: border-bottom-color 0.2s, color 0.2s;
+}
+
+#nav-menu > ul > li > a:hover {
+    color: #ffc240;
+    border-bottom: 3px solid #ffc240;
+}
+
+#nav-menu > ul > li > a.active {
+    color: #002a58;
+    border-bottom: 3px solid #002a58;
+}
+
+@media screen and (max-width: 768px) {
+    #nav-menu > ul > li > a {
+        -webkit-transition: border-right-color 0.2s, color 0.2s, background-color 0.2s;
+        transition: border-right-color 0.2s, color 0.2s, background-color 0.2s;
+    }
+
+    #nav-menu > ul > li > a:hover {
+        color: #ffc240;
+        border-bottom-style: none; 
+        border-right: 4px solid #ffc240;
+        background-color: #f8f8f8;
+    }
+    
+    #nav-menu > ul > li > a.active {
+        color: #002a58;
+        border-bottom-style: none; 
+        border-right: 4px solid #002a58;
+        background-color: #f8f8f8;
+    }
+}
+

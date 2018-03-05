@@ -1,0 +1,162 @@
+/* flex-row or flex-col are about property whether flex items's direction is row or column in flexbox. */
+.flex-row { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.flex-col { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+.flex-col > * { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+
+/* flex-wrap is about property whether you wrap items in flexbox if items exceed flexbox's width. */
+.flex-wrap { -webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap; }
+.flex-nowrap { -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+
+/* flex-main-* is about property that align items in flex-direction. */
+.flex-main-start { -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+.flex-main-end { -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+.flex-main-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+.flex-main-between { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+.flex-main-around { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+
+/* flex-cross-* is about property that align items in direction orthogonal to flex-direction. */
+.flex-cross-start { -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+.flex-cross-end { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+.flex-cross-center { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.flex-cross-stretch { -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+.flex-cross-baseline { -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.flex-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+
+/* remind that In IE 10, default flex is 0 0 auto. other browsers have 0 1 auto for default. */
+/* remin that col-* class just sets width value (X-axis) */
+/* so when flex-direction is column, col-* class does not work. */
+.col-auto { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+.col-eq { -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.col-full { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-1-10 { width: 10%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-2-10 { width: 20%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-3-10 { width: 30%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-4-10 { width: 40%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-5-10 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-6-10 { width: 60%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-7-10 { width: 70%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-8-10 { width: 80%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-9-10 { width: 90%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-10-10 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-1-12 { width: 8.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-2-12 { width: 16.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-3-12 { width: 25%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-4-12 { width: 33.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-5-12 { width: 41.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-6-12 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-7-12 { width: 58.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-8-12 { width: 66.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-9-12 { width: 75%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-10-12 { width: 83.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-11-12 { width: 91.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+.col-12-12 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+
+@media (max-width: 576px) {
+  /* flex-row or flex-col are about property whether flex items's direction is row or column in flexbox. */
+  .flex-sm-row { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  .flex-sm-col { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  .flex-sm-col > * { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+
+  /* flex-wrap is about property whether you wrap items in flexbox if items exceed flexbox's width. */
+  .flex-sm-wrap { -webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap; }
+  .flex-sm-nowrap { -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  
+  /* flex-main-* is about property that align items in flex-direction. */
+  .flex-sm-main-start { -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+  .flex-sm-main-end { -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+  .flex-sm-main-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  .flex-sm-main-between { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+  .flex-sm-main-around { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+  
+  /* flex-cross-* is about property that align items in direction orthogonal to flex-direction. */
+  .flex-sm-cross-start { -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+  .flex-sm-cross-end { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+  .flex-sm-cross-center { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .flex-sm-cross-stretch { -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+  .flex-sm-cross-baseline { -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+  .flex-sm-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  
+  /* remind that In IE 10, default flex is 0 0 auto. other browsers have 0 1 auto for default. */
+  /* remin that col-* class just sets width value (X-axis) */
+  /* so when flex-direction is column, col-* class does not work. */
+  .col-sm-auto { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-eq { -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+  .col-sm-full { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+  .col-sm-1-10 { width: 10%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-2-10 { width: 20%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-3-10 { width: 30%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-4-10 { width: 40%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-5-10 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-6-10 { width: 60%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-7-10 { width: 70%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-8-10 { width: 80%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-9-10 { width: 90%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-10-10 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+  .col-sm-1-12 { width: 8.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-2-12 { width: 16.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-3-12 { width: 25%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-4-12 { width: 33.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-5-12 { width: 41.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-6-12 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-7-12 { width: 58.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-8-12 { width: 66.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-9-12 { width: 75%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-10-12 { width: 83.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-11-12 { width: 91.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-sm-12-12 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+}
+
+@media (max-width: 768px) {
+  /* flex-row or flex-col are about property whether flex items's direction is row or column in flexbox. */
+  .flex-md-row { -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  .flex-md-col { -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  .flex-md-col > * { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+
+  /* flex-wrap is about property whether you wrap items in flexbox if items exceed flexbox's width. */
+  .flex-md-wrap { -webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap; }
+  .flex-md-nowrap { -webkit-flex-wrap: nowrap; -ms-flex-wrap: none; flex-wrap: nowrap; }
+  
+  /* flex-main-* is about property that align items in flex-direction. */
+  .flex-md-main-start { -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; }
+  .flex-md-main-end { -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
+  .flex-md-main-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  .flex-md-main-between { -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+  .flex-md-main-around { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
+  
+  /* flex-cross-* is about property that align items in direction orthogonal to flex-direction. */
+  .flex-md-cross-start { -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
+  .flex-md-cross-end { -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; }
+  .flex-md-cross-center { -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  .flex-md-cross-stretch { -webkit-align-items: stretch; -ms-flex-align: stretch; align-items: stretch; }
+  .flex-md-cross-baseline { -webkit-align-items: baseline; -ms-flex-align: baseline; align-items: baseline; }
+  .flex-md-center { -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+  
+  /* remind that In IE 10, default flex is 0 0 auto. other browsers have 0 1 auto for default. */
+  /* remin that col-* class just sets width value (X-axis) */
+  /* so when flex-direction is column, col-* class does not work. */
+  .col-md-auto { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-eq { -ms-flex-preferred-size: 0; flex-basis: 0; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+  .col-md-full { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+  .col-md-1-10 { width: 10%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-2-10 { width: 20%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-3-10 { width: 30%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-4-10 { width: 40%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-5-10 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-6-10 { width: 60%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-7-10 { width: 70%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-8-10 { width: 80%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-9-10 { width: 90%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-10-10 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+  .col-md-1-12 { width: 8.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-2-12 { width: 16.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-3-12 { width: 25%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-4-12 { width: 33.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-5-12 { width: 41.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-6-12 { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-7-12 { width: 58.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-8-12 { width: 66.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-9-12 { width: 75%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-10-12 { width: 83.333333%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-11-12 { width: 91.666667%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
+  .col-md-12-12 { width: 100%; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; box-sizing: border-box; }
+}

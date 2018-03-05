@@ -1,0 +1,56 @@
+.button {
+    border: 2px solid #002a58;
+    border-radius: 3px;
+}
+
+.button > * {
+    display: block;
+    color: #002a58;
+    background-color: #ffffff;
+    padding: 0.25rem 0.5rem;
+    -webkit-transition: color 0.2s, background-color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.button:hover > * {
+    color: #ffffff;
+    background-color: #002a58;
+}
+
+/* image를 담는 태그에 들어있는 img의 크기에 따라 width을 결정하는 클래스들 */
+.image-auto { display: block; }
+
+/* col-* 과 다른점은 오직 flex 속성값 */
+/* image를 담는 태그에 width % 값을 주는 클래스들 */
+.image-1-10 { display: block; width: 10%; }
+.image-2-10 { display: block; width: 20%; }
+.image-3-10 { display: block; width: 30%; }
+.image-4-10 { display: block; width: 40%; }
+.image-5-10 { display: block; width: 50%; }
+.image-6-10 { display: block; width: 60%; }
+.image-7-10 { display: block; width: 70%; }
+.image-8-10 { display: block; width: 80%; }
+.image-9-10 { display: block; width: 90%; }
+.image-10-10 { display: block; width: 100%; }
+
+/* image를 담는 태그에 width px 값을 주는 클래스들 */
+.image-fixed-1-10 { display: block; width: 100px; }
+.image-fixed-2-10 { display: block; width: 200px; }
+.image-fixed-3-10 { display: block; width: 300px; }
+.image-fixed-4-10 { display: block; width: 400px; }
+.image-fixed-5-10 { display: block; width: 500px; }
+.image-fixed-6-10 { display: block; width: 600px; }
+.image-fixed-7-10 { display: block; width: 700px; }
+.image-fixed-8-10 { display: block; width: 800px; }
+.image-fixed-9-10 { display: block; width: 900px; }
+.image-fixed-10-10 { display: block; width: 1000px; }
+
+*[class^="image-"] > img { width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+
+}

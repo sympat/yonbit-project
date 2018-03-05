@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{% block title %}yonbit의 base 페이지입니다.{% endblock %}</title>
+
+    {% load staticfiles %}
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/basenav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/basefooter.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/flex.css' %}">
+
+    <!-- javascript -->
+    <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script defer src="{% static 'js/fontawesome/fontawesome-all.js' %}"></script>
+</head>
+
+<!-- --- 태그를 구별해줄 id 이름을 결정하는 규칙 ------
+1. body, nav, aside 등 semantic 태그에는 태그 이름과 똑같은 id를 가진다.
+2. div, ul 등 그 외의 태그에는 용도에 맞는 이름의 id를 가진다.
+3-1. 어떤 태그의 하위에 있는 태그는 무조건 id 앞에 상위 태그(부모 태그)의 id를 덧붙여서 id를 만든다. 
+3-2. 예를 들면 nav 태그 밑에 logo로 쓸 div 태그의 id는 #nav-logo가 된다.
+4-1. css 구현상의 이유로 특정 태그를 감싸는 태그가 생길 경우, 무조건 안쪽 태그의 id 뒤에 inner를 덧붙여서 id를 만든다.
+4-2. 예를 들면 button 태그가 #nav-btnSpace-btn이라는 id를 가지고 있을 때 안에 있는 i 태그의 id는 #nav-btnSpace-btn-inner가 된다.
+5-1. css 구현상의 이유로 임시방편으로 태그를 만들 경우, 그 태그의 id는 ___Space 와 같이 만든다.
+5-2. 예를 들어 #nav-btnSpace는 미디어 쿼리에서 버튼을 보여주기 위해 필요한 임시 태그로 용도에 맞게 #nav-btnSpace라는 id를 가진다.
+6-1. 목록을 나열하는 것과 같은 상황처럼, id를 쓸 수 없는 경우에는 태그를 구별하기 위해 미리 정의한 class를 사용하도록 한다.
+6-2. 이 때 사용할 class는 용도에 따라 list, link, block, text, icon, img 으로 정의하였다. (필요에 따라 추가 정의 가능)
+------ 태그를 구별해줄 id 이름을 결정하는 규칙 --- -->
+<body>
+  <div id="body">
+    <nav id="nav" class="d-flexbox flex-main-center">
+      <div id="nav-logo" class="d-flexbox">
+        <img src="{% static 'img/logo.png' %}" alt="logo">
+      </div>
+  
+      <div id="nav-button" class="d-none d-flex-sm flex-main-end-sm flex-cross-center-sm col-6-10-sm">
+        <button class="button">
+          <i class="icon fas fa-chevron-down"></i>
+        </button>
+      </div>
+  
+      <div class="clear-sm"></div>
+  
+      <div id="nav-menu" class="col-6-10 d-none-sm col-10-10-sm">
+        <ul class="col flex-col-sm">
+          <li class="flex-center col"><a href="#" class="active col-sm">과목검색</a></li>
+          <li class="flex-center col"><a href="#" class="col-sm">과목상세</a></li>
+          <li class="flex-center col"><a href="#" class="col-sm">과목비교</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <section id="section" class="flexbox">
+      {% block section %}
+      {% endblock %}
+    </section>
+  
+    <footer id="footer" class="flexbox flex-col">
+      <div id="footer-menu" class="flex-main-center padding">
+        <ul class="list flex-5 flex-wrap flex-3-sm flex-col-sm">
+          <!-- 이 경우는 link가 list-item 전체를 차지하므로 list-item에서 중앙 정렬이 따로 필요 없음. -->
+          <li class="list-item flex"><a href="#" class="link flex-center flex">FAQ</a></li>
+          <li class="list-item flex"><a href="#" class="link flex-center flex">공지사항</a></li>
+          <li class="list-item flex"><a href="#" class="link flex-center flex">도움말</a></li>
+        </ul>
+      </div>
+  
+      <div id="footer-etc" class="flex-col-sm">
+        <ul id="footer-etc-contact" class="flex-col flex padding">
+          <li class="list-item flex-main-between">
+            <span class="text">Email:</span>
+            <span class="text text-justify">june95712@gmail.com</span>
+          </li>
+          <li class="list-item flex-main-between">
+            <span class="text" style="">Address:</span>
+            <span class="text text-justify" style="">경기도 성남시 분당구 정자동 정든마을 신화아파트 501-101</span>
+          </li>
+          <li class="list-item flex-main-between">
+            <span class="text">Mobile:</span>
+            <span class="text text-justify">010-3598-0712 (휴대폰번호) 070-8291-7711 (집번호)</span>
+          </li>
+          <li class="list-item flex-col">
+            <span class="text">문의는 위의 적힌 이메일로 보내주십시오.</span>
+            <span class="text">&copy; 2018 Yonbit ALL RIGHTS RESERVED.</span>
+          </li>
+        </ul>
+  
+        <div id="footer-etc-site" class="flex-wrap flex-cross-center flex padding">
+          <a href="#" class="link flex"><i class="icon flex fab fa-facebook-square flex-center"></i></a>
+          <a href="#" class="link flex"><i class="icon flex fab fa-youtube flex-center"></i></a>
+        </div>
+      </div>
+  
+    </footer>    
+  </div>
+  <!-- javascript -->
+  <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

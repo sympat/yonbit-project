@@ -1,0 +1,138 @@
+/* color property */
+/* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+
+.color-white { color: #ffffff; }
+.color-black { color: #000000; }
+.color-transparent { color: transparent; }
+.color-1 { color: #002a58; }
+.color-2 { color: #00448e; }
+.color-3 { color: #ffc240; }
+.color-4 { color: #dadbde; }
+.color-5 { color: #f5f5f5; }
+.color-6 { color: #4d4d4d; }
+.color-7 { color: #616366; }
+.color-8 { color: #ccc; }
+
+/* background color property */
+/* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+
+.bg-color-white { background-color: #ffffff; }
+.bg-color-black { background-color: #000000; }
+.bg-color-transparent { background-color: transparent; }
+.bg-color-1 { background-color: #002a58; }
+.bg-color-2 { background-color: #00448e; }
+.bg-color-3 { background-color: #ffc240; }
+.bg-color-4 { background-color: #dadbde; }
+.bg-color-5 { background-color: #f5f5f5; }
+.bg-color-6 { background-color: #4d4d4d; }
+.bg-color-7 { background-color: #616366; }
+.bg-color-8 { color: #ccc; }
+
+/* border color property */
+/* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+
+.border-color-white { border-color: #ffffff; }
+.border-color-black { border-color: #000000; }
+.border-color-transparent { border-color: transparent; }
+.border-color-1 { border-color: #002a58; }
+.border-color-2 { border-color: #00448e; }
+.border-color-3 { border-color: #ffc240; }
+.border-color-4 { border-color: #dadbde; }
+.border-color-5 { border-color: #f5f5f5; }
+.border-color-6 { border-color: #4d4d4d; }
+.border-color-7 { border-color: #616366; }
+.border-color-8 { color: #ccc; }
+
+@media (max-width: 576px) {
+  /* color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+  
+  .color-sm-white { color: #ffffff; }
+  .color-sm-black { color: #000000; }
+  .color-sm-transparent { color: transparent; }
+  .color-sm-1 { color: #002a58; }
+  .color-sm-2 { color: #00448e; }
+  .color-sm-3 { color: #ffc240; }
+  .color-sm-4 { color: #dadbde; }
+  .color-sm-5 { color: #f5f5f5; }
+  .color-sm-6 { color: #4d4d4d; }
+  .color-sm-7 { color: #616366; }
+  .color-sm-8 { color: #ccc; }
+  
+  /* background color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+  
+  .bg-sm-color-white { background-color: #ffffff; }
+  .bg-sm-color-black { background-color: #000000; }
+  .bg-sm-color-transparent { background-color: transparent; }
+  .bg-sm-color-1 { background-color: #002a58; }
+  .bg-sm-color-2 { background-color: #00448e; }
+  .bg-sm-color-3 { background-color: #ffc240; }
+  .bg-sm-color-4 { background-color: #dadbde; }
+  .bg-sm-color-5 { background-color: #f5f5f5; }
+  .bg-sm-color-6 { background-color: #4d4d4d; }
+  .bg-sm-color-7 { background-color: #616366; }
+  .bg-sm-color-8 { color: #ccc; }
+
+  /* border color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+  
+  .border-sm-color-white { border-color: #ffffff; }
+  .border-sm-color-black { border-color: #000000; }
+  .border-sm-color-transparent { border-color: transparent; }
+  .border-sm-color-1 { border-color: #002a58; }
+  .border-sm-color-2 { border-color: #00448e; }
+  .border-sm-color-3 { border-color: #ffc240; }
+  .border-sm-color-4 { border-color: #dadbde; }
+  .border-sm-color-5 { border-color: #f5f5f5; }
+  .border-sm-color-6 { border-color: #4d4d4d; }
+  .border-sm-color-7 { border-color: #616366; }
+  .border-sm-color-8 { color: #ccc; }
+}
+
+@media (max-width: 768px) {
+  /* color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+  
+  .color-md-white { color: #ffffff; }
+  .color-md-black { color: #000000; }
+  .color-md-transparent { color: transparent; }
+  .color-md-1 { color: #002a58; }
+  .color-md-2 { color: #00448e; }
+  .color-md-3 { color: #ffc240; }
+  .color-md-4 { color: #dadbde; }
+  .color-md-5 { color: #f5f5f5; }
+  .color-md-6 { color: #4d4d4d; }
+  .color-md-7 { color: #616366; }
+  .color-md-8 { color: #ccc; }
+  
+  /* background color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d */
+  
+  .bg-md-color-white { background-color: #ffffff; }
+  .bg-md-color-black { background-color: #000000; }
+  .bg-md-color-transparent { background-color: transparent; }
+  .bg-md-color-1 { background-color: #002a58; }
+  .bg-md-color-2 { background-color: #00448e; }
+  .bg-md-color-3 { background-color: #ffc240; }
+  .bg-md-color-4 { background-color: #dadbde; }
+  .bg-md-color-5 { background-color: #f5f5f5; }
+  .bg-md-color-6 { background-color: #4d4d4d; }
+  .bg-md-color-7 { background-color: #616366; }
+  .bg-md-color-8 { color: #ccc; }
+  
+  /* border color property */
+  /* 진한파랑 #002a58 연한파랑 #00448e 노랑 #ffc240 테두리회색 #dadbde 바탕회색 #f5f5f5 흑색 #4d4d4d 풋터 테두리색 #6163666 */
+  
+  .border-md-color-white { border-color: #ffffff; }
+  .border-md-color-black { border-color: #000000; }
+  .border-md-color-transparent { border-color: transparent; }
+  .border-md-color-1 { border-color: #002a58; }
+  .border-md-color-2 { border-color: #00448e; }
+  .border-md-color-3 { border-color: #ffc240; }
+  .border-md-color-4 { border-color: #dadbde; }
+  .border-md-color-5 { border-color: #f5f5f5; }
+  .border-md-color-6 { border-color: #4d4d4d; }
+  .border-md-color-7 { border-color: #616366; }
+  .border-md-color-8 { color: #ccc; }
+}

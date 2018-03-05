@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+마일리지 올킬 - yonbit
+{% endblock %}
+
+{% block css %}
+{% endblock %}
+
+{% block content-class %}
+d-flexbox flex-main-center
+{% endblock %}
+
+{% block content %}
+<div class="d-flexbox flex-col col-8-12 p-4 bg-color-white border-x border-color-4 col-md-full no-md-border-x">
+    <div id="content-title" class="d-flexbox flex-col flex-cross-center my-4">
+        <span class="color-2 font-size-4 font-weight-bold text-align-center">마일리지 올킬을 위해</span>
+        <span class="font-size-6 font-weight-bold text-align-center">연세 마일리지 분석 사이트</span>
+    </div>
+
+    <div id="content-logo" class="d-flexbox flex-main-center my-4">
+        <div class="image-auto">
+            <img src="{% static 'img/index-logo.png' %}" alt="logo">
+        </div>
+    </div>
+
+    <div id="content-button" class="d-flexbox flex-main-center my-4">
+        <button class="button mx-2">
+            <span class="font-size-3 font-weight-bold px-3 py-2">시작</span>
+        </button>
+    </div>
+
+    <div id="content-footer" class="d-flexbox flex-main-center my-4">
+        <span class="text-align-center font-weight-bold">시작을 누르거나 과목검색을 통해 마일리지 관련 정보를 알아보세요.</span>
+    </div>
+</div>
+{% endblock %}

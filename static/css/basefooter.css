@@ -1,0 +1,8 @@
+#footer-menu > ul > li > a {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+#footer-menu > ul > li > a:hover {
+    color: #ffffff;
+}

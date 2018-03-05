@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <title>{% block title %}yonbit의 base 페이지입니다.{% endblock %}</title>
+  
+      {% load staticfiles %}
+      <!-- css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/basenav.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/basefooter.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/utility.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/border.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/color.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/flex.css' %}">
+      {% block css %}{% endblock %}
+  
+      <!-- javascript -->
+      <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+      <script defer src="{% static 'js/fontawesome/fontawesome-all.js' %}"></script>
+  </head>
+  
+  <body class="setflex">
+    <div id="body" class="bg-color-5">
+      <nav id="nav" class="d-flexbox flex-main-center bg-color-white border-bottom border-color-4">
+      <div id="nav-combine" class="d-flexbox my-2 col-md-full">
+        <a id="nav-combine-logo" href="#" class="ml-md-3">
+          <img src="{% static 'img/logo.png' %}" alt="logo">
+        </a>
+
+        <div id="nav-combine-button" class="d-none d-md-flexbox col-md-eq flex-md-main-end flex-md-cross-center mr-md-3">
+          <!--
+          <button class="border-md-w-2 border-md-color-1 border-md-rounded">
+            <i class="icon fas fa-chevron-down fa-2x color-md-1 py-md-1 px-md-2"></i>
+          </button>
+        -->
+          <button class="button">
+            <i class="icon fas fa-chevron-down fa-2x"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="nav-menu" class="d-flexbox col-8-12 my-2 d-md-none col-md-full m-md-0">
+        <ul class="d-flexbox col-full flex-md-col border-md-top border-md-color-4">
+          <li class="d-flexbox col-eq flex-center border-md-bottom border-md-color-4"><a href="#" class="color-1 py-1 px-2 border-bottom-w-3 border-color-transparent font-weight-bold col-md-full py-md-2 px-md-3 no-md-border-bottom border-md-right-w-4">과목검색</a></li>
+          <li class="d-flexbox col-eq flex-center border-md-bottom border-md-color-4"><a href="#" class="color-1 py-1 px-2 border-bottom-w-3 border-color-transparent font-weight-bold col-md-full py-md-2 px-md-3 no-md-border-bottom border-md-right-w-4">과목상세</a></li>
+          <li class="d-flexbox col-eq flex-center"><a href="#" class="color-1 py-1 px-2 border-bottom-w-3 border-color-transparent font-weight-bold col-md-full py-md-2 px-md-3 no-md-border-bottom border-md-right-w-4">과목비교</a></li>
+        </ul>
+      </div>
+      </nav>
+    
+      <div id="content" class="{% block content-class %}{% endblock %}">
+      {% block content %}
+      {% endblock %}
+      </div>
+    
+      <footer id="footer" class="d-flexbox flex-col bg-color-6 border-top border-color-4">
+      <div id="footer-menu" class="d-flexbox flex-main-center p-2 border-bottom border-color-7 p-md-3">
+        <ul class="d-flexbox col-5-10 flex-md-col col-md-3-10 border-md-y border-color-white">
+          <li class="d-flexbox col-eq flex-center"><a href="#" class="color-8 my-2 font-size-2 font-weight-bold">FAQ</a></li>
+          <li class="d-flexbox col-eq flex-center"><a href="#" class="color-8 my-2 mt-md-0 font-size-2 font-weight-bold">공지사항</a></li>
+          <li class="d-flexbox col-eq flex-center"><a href="#" class="color-8 my-2 mt-md-0 font-size-2 font-weight-bold">도움말</a></li>
+        </ul>
+      </div>
+  
+      <div id="footer-etc" class="d-flexbox flex-md-col">
+        <ul id="footer-etc-contact" class="d-flexbox col-eq flex-col p-3 border-md-bottom border-md-color-7">
+          <li class="d-flexbox flex-main-between flex-md-col">
+            <span class="color-white mb-1 font-size-2 font-weight-bold">Email:</span>
+            <span class="color-8 mb-2 font-size-2">june95712@gmail.com</span>
+          </li>
+          <li class="d-flexbox flex-main-between flex-md-col">
+            <span class="color-white mb-1 font-size-2 font-weight-bold">Address:</span>
+            <span class="color-8 mb-2 font-size-2">경기도 성남시 분당구 정자동 정든마을 신화아파트 501-101</span>
+          </li>
+          <li class="d-flexbox flex-main-between flex-md-col">
+            <span class="color-white mb-1 font-size-2 font-weight-bold">Mobile:</span>
+            <span class="d-flexbox flex-col mb-2">
+              <span class="color-8 font-size-2">010-3598-0712 (휴대폰번호)</span>
+              <span class="color-8 font-size-2">070-8291-7711 (집번호)</span>
+            </span>
+          </li>
+          <li class="d-flexbox flex-col">
+            <span class="color-white font-size-2 font-weight-bold">문의는 위의 적힌 이메일로 보내주십시오.</span>
+            <span class="color-white font-size-2 font-weight-bold">&copy; 2018 Yonbit ALL RIGHTS RESERVED.</span>
+          </li>
+        </ul>
+  
+        
+        <div id="footer-etc-site" class="d-flexbox col-eq flex-main-center p-3">
+          <a href="#" class="d-flexbox flex-center color-8"><i class="icon fab fa-facebook-square fa-2x mx-2"></i></a>
+          <a href="#" class="d-flexbox flex-center color-8"><i class="icon flex fab fa-youtube flex-center fa-2x mx-2"></i></a>
+        </div>
+      </div>
+      </footer>    
+    </div>
+    <!-- javascript -->
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+  </body>
+</html>
